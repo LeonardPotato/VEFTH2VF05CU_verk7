@@ -41,8 +41,7 @@ def restricted():
 @route('/signout')
 def signout():
     response.set_cookie('account', "", expire=0)
-    return "You have been signed out." \
-            "<br> <a href='/login'>Log in</a>"
+    return redirect('/login')
 
 #Session lausn
 
