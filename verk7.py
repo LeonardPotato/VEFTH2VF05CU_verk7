@@ -92,9 +92,4 @@ def remove_cart():
     return redirect('/shop') #redirectar user a /shop
 
 
-
-
-
-
-run(app = my_session)
-#run(app = my_session, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), app=my_session)
